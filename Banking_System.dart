@@ -33,5 +33,12 @@ class CheckingAccount extends BankAccount{
   }
 }
 main(){
+  List<BankAccount> bankaccount = [];
+  bankaccount.add(SavingsAccount(100));
+  bankaccount.add(CheckingAccount(100));
+  for(int i = 0; i<bankaccount.length; i++){
+    bankaccount[i].withdraw(150);
+    print("Your balance: ${bankaccount[i].balance}");
+  }
 
 }
