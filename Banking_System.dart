@@ -7,6 +7,7 @@ abstract class BankAccount{
   }
   void withdraw(double amount);
 }
+//Savings account
 class SavingsAccount extends BankAccount{
   SavingsAccount(double balance) : super(balance: balance);
   void withdraw(double amount){
