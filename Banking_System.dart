@@ -18,6 +18,7 @@ class SavingsAccount extends BankAccount{
     }
   }
 }
+//checking Account
 class CheckingAccount extends BankAccount{
   CheckingAccount(double balance) : super(balance : balance);
   void withdraw(double amount){
